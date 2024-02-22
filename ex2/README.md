@@ -1,4 +1,4 @@
-Certainly! Below is a basic Python code using the Paho MQTT client library to connect to an MQTT server and subscribe to the topic "#control". Before running the code, make sure you have the `paho-mqtt` library installed, which you can install using pip (`pip install paho-mqtt`).
+Below is a basic Python code using the Paho MQTT client library to connect to an MQTT server and subscribe to the topic "#control". Before running the code, make sure you have the `paho-mqtt` library installed, which you can install using pip (`pip install paho-mqtt`).
 
 ```python
 import paho.mqtt.client as mqtt
