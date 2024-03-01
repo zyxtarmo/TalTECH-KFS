@@ -1,4 +1,6 @@
-Below is a basic Python code using the Paho MQTT client library to connect to an MQTT server and subscribe to the topic "#control". Before running the code, make sure you have the `paho-mqtt` library installed, which you can install using pip (`pip install paho-mqtt`).
+## Boilerplate from OpenAI
+
+Below is a example Python code using the Paho MQTT client library to connect to an MQTT server and subscribe to the topic "#control". Before running the code, make sure you have the `paho-mqtt` library installed, which you can install using pip (`pip install paho-mqtt`).
 
 ```python
 import paho.mqtt.client as mqtt
@@ -10,8 +12,8 @@ port = 1883  # Default MQTT port
 # Define callback functions for MQTT events
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
-    # Subscribe to the topic "#control" when connected
-    client.subscribe("#control")
+    # Subscribe to the topic "control" when connected
+    client.subscribe("control")
 
 def on_message(client, userdata, msg):
     print("Received message: "+msg.topic+" "+str(msg.payload))
