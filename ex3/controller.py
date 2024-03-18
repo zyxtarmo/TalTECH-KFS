@@ -8,6 +8,9 @@ import time
 import paho.mqtt.client as paho
 from PIL import Image, ImageDraw, ImageFont
 
+# create config if does not exist
+# client-id
+# broker-ip
 
 broker="10.8.0.1"
 
