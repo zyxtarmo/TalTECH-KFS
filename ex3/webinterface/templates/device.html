@@ -1,0 +1,30 @@
+<!-- Store this code in 'index.html' file inside the 'templates' folder-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Device </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">					 
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Index</h1>
+			</div></br></br></br>
+				<h1 class="bottom">
+					Hi {{session.username}}!! Your devices
+				</h1>
+			<!-- list of devices in form where you can send message -->
+			<form action="{{ url_for('message') }}" method="post">
+				<input id="deviceid" name="deviceid" type="text" placeholder="UUID" class="textbox" value="{{deviceid}}"/></br></br>
+				<input id="message" name="message" type="text" placeholder="Enter Your Message" class="textbox"/></br></br>
+				<input type="submit" class="btn" value="Send"></br></br>
+			</br></br></br>
+				<a href="/" class="btn">Main page</a>
+			</br></br></br>
+				<a href="{{ url_for('logout') }}" class="btn">Logout</a>
+		</div>
+		</div>
+	</body>
+</html>
